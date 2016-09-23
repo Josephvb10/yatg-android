@@ -3,21 +3,39 @@
 
     <item
         is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_d8c2abf4325d2a8dd6d59b65233487782ebc0326/classes.dex" />
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_d7d67bbd1010d530a1712bde1fac78d7dcf94a4f/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_dcbd345eef31fc55d61078597159072fa2bbaa81/classes.dex" />
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_39134cb74927a884e3f1f9c5e1a05f695ea78b05/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_8745791746ef37e8131744fa5c7067b338f8be85/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="80188b63a37a470d18f9f507403a1464361203fc">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_db38009a424e61a79943d7fc03e5c16efe97133a/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -26,151 +44,133 @@
         optimize="true"
         revision="24.0.2"
         sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_5227fa62fe3230ba079ecca46660d9a099ddae15/classes.dex" />
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_5227fa62fe3230ba079ecca46660d9a099ddae15/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_8151885282877e6e4e7532ee7b05add196e11cc3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_215c7789ae38078f85c24c9cbb779f1758328994/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_a40b6ad92a8c767ebb780cf6684a8cb341ab885f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_cdfbf0fc190cf5f5bc2dc47b79d99d887e4a2ecf/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_9e3169d53473b97f08fba3bfa91b17f2de271775/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_6cf685493e8aedbc404fb65b3ce6808635fcd010/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_6acb972ffb4da53d06c935a0cb1ba186ad9f5e38/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_6781dd830219b528bed58dbd4c2feb1e1d63787f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="df054c55e6811751e04b72fb34247d7977cd0e8d">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3168c3865ecfd0ac423d2a8e4d84fdf991cd0e92/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_72de4b0ea6fac2ffa573dcf7c96d68540756a756/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_208d100d394a9e0b04e87d5d9d31477323738d03/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_af451902ed5b57a492dfffaff9ffb471d58848f2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8f7504d4d084ba2da8e444cd672d917ad85a5663">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_293f9e822b5cee111cca1fc8310097eb90bc2adf/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_5f06b39fce355585a6e778b7e32ede86969da343/classes.dex" />
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_5be06b47f694a2c560ad575638492456a1e3928b/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_73e76ee96931e789478390ca5105d76854b27c61/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_e046c0821f040f0f9db7f5b801306772bba66b40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_a84d98a52dfd2b4b1f6a3cb922ed04260180a62c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_41265ce38cdbf375aa6eee9a93201926b5052954/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_413babcc31bc1d6c6f5a11e795d04bd134de0b55/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="68b6b7cf7c671e3b91254a3970791ddffe42a847">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c03d58ef398a8717eae3b27bf8db1880014effe4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_e0c040da074647fac48263f479958ac08d2e123f/classes.dex" />
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_75aa1243a8b3593d53bd5b1eff4960845fe3237e/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="/Users/DanielC/AndroidStudioProjects/HelloWorld/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_ee9b004b7229a3b3e07c31f2ed4f00c0e7643c5e/classes.dex" />
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_91cd384c0fadefaa5662d893b806930b833df0de/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_b94990c4ed0cd70dad5a78044e417dcb801c52be/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_8d135c2b30cc1c0f65e45a3677814ae1ff9b8945/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_2341494a0f98e83e4231617dc779bce6d4889072/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_dbf15659d5cb2b5849eb571a3b438614036f27fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_ae06d1d1e60ec5512a3a7e0909aaee245a28e519/classes.dex" />
     </item>
 
 </items>

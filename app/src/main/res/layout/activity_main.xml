@@ -12,16 +12,43 @@
     tools:context="danielc.tec.helloworld.MainActivity"
     android:background="@color/colorPrimaryDark">
 
-    <Button
-        android:text="PLAY"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/Button_Play"
-        style="@style/Widget.AppCompat.Button"
-        android:visibility="visible"
-        android:textSize="40sp"
-        android:textColorLink="?attr/colorPrimaryDark"
-        android:layout_centerHorizontal="true"
-        android:background="@color/colorAccent" />
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Enter your Nickname:"
+            android:layout_width="match_parent"
+            android:id="@+id/textView3"
+            android:layout_height="71dp"
+            android:textSize="36sp"
+            tools:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/entry_nickname"
+            android:background="@android:color/background_light"
+            android:textSize="36sp"
+            android:layout_height="100dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="102dp" />
+
+        <Button
+            android:text="PLAY"
+            android:layout_width="match_parent"
+            android:layout_height="312dp"
+            android:id="@+id/Button_Play"
+            style="@style/Widget.AppCompat.Button"
+            android:visibility="visible"
+            android:textSize="40sp"
+            android:textColorLink="?attr/colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent" />
+    </LinearLayout>
 
 </RelativeLayout>
