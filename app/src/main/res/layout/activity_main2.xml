@@ -24,7 +24,8 @@
             android:layout_width="347dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView"
-            android:textSize="36sp" />
+            android:textSize="36sp"
+            android:textColor="@color/colorPrimary" />
 
         <Space
             android:layout_width="match_parent"
@@ -49,7 +50,8 @@
             android:layout_width="345dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView5"
-            android:textSize="36sp" />
+            android:textSize="36sp"
+            android:textColor="@color/colorPrimary" />
 
         <Space
             android:layout_width="match_parent"

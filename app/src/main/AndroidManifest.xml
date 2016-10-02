@@ -20,7 +20,9 @@
             android:name=".GameScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_game_screen"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".prueba" />
+        <activity android:name=".Main3Activity"></activity>
     </application>
 
 </manifest>

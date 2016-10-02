@@ -1,6 +1,8 @@
 package danielc.tec.helloworld;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +16,8 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         android.util.Log.d("MyApp","I am here");
 
@@ -29,9 +33,10 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent next = new Intent(Main2Activity.this, MainActivity.class);
+                Intent next = new Intent(Main2Activity.this, Main3Activity.class);
 
                 startActivity(next);
+
             }
         });
     }

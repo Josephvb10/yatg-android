@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="hola"
+    xmlns:app2="login"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -23,7 +24,8 @@
             android:id="@+id/textView3"
             android:layout_height="71dp"
             android:textSize="36sp"
-            tools:textStyle="bold" />
+            tools:textStyle="bold"
+            android:textColor="@color/colorPrimary" />
 
         <EditText
             android:layout_width="match_parent"
@@ -36,7 +38,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="102dp" />
+            android:layout_height="40dp" />
 
         <Button
             android:text="PLAY"
@@ -48,7 +50,7 @@
             android:textSize="40sp"
             android:textColorLink="?attr/colorPrimaryDark"
             android:layout_centerHorizontal="true"
-            android:background="@color/colorAccent" />
+            android:background="@color/colorPrimary" />
     </LinearLayout>
 
 </RelativeLayout>
