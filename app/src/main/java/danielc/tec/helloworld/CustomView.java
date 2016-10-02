@@ -6,7 +6,11 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.media.MediaPlayer;
 import android.view.View;
+import android.widget.Button;
+
+import org.w3c.dom.Text;
 
 
 /**
@@ -16,28 +20,23 @@ import android.view.View;
 public class CustomView extends View {
     Paint paint;
     RectF cuadrito;
+    Button Button;
 
     public CustomView(Context context) {
         super(context);
         cuadrito = new RectF(20, 20, 100,100);
-
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        /** setContentView(R.layout.activity_main); **/
-
-
         Rect cuadro = new Rect();
-        Paint blue = new Paint();
+        Paint black = new Paint();
         cuadro.set(0,0,canvas.getWidth(),canvas.getHeight());
-        blue.setColor(Color.BLACK);
-        blue.setStyle(Paint.Style.FILL);
-        canvas.drawRect(cuadro, blue);
-
-
+        black.setColor(Color.BLACK);
+        black.setStyle(Paint.Style.FILL);
+        canvas.drawRect(cuadro, black);
 
         for (int i = 1; i <= 34; i++){
             for (int j = 1; j <= 34; j++) {
@@ -45,16 +44,24 @@ public class CustomView extends View {
                 int size = 30;
                 cuadro.set(40+size * j, i * size, 40+size * j+size, i * size + size);
 
-                //Paint blue = new Paint();
-                blue.setColor(Color.BLACK);
-                blue.setStyle(Paint.Style.FILL);
+                //Paint black = new Paint();
+                black.setColor(Color.BLACK);
+                black.setStyle(Paint.Style.FILL);
 
-                canvas.drawRect(cuadro, blue);
-                blue.setColor(Color.CYAN);
-                blue.setStyle(Paint.Style.STROKE);
-                canvas.drawRect(cuadro,blue);
+                canvas.drawRect(cuadro, black);
+                black.setColor(Color.CYAN);
+                black.setStyle(Paint.Style.STROKE);
+                canvas.drawRect(cuadro,black);
+
+
             }
         }
+        Rect base = new Rect();
+        Paint Tron1 = new Paint();
+        base.set(1150,30,1860,1050);
+        Tron1.setColor(Color.CYAN);
+        Tron1.setStyle(Paint.Style.FILL);
+        canvas.drawRect(base, Tron1);
 
 
     }
