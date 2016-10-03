@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="8dbe70abe54136391a9d555c64379ed83530f30e">
+        sha1="a48b9d81a9def947203e4e6f690c05dabd2c5f29">
         <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/pre-dexed/debug/instant-run_db38009a424e61a79943d7fc03e5c16efe97133a.jar" />
     </item>
     <item
@@ -79,7 +79,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="606df24d1d134d5edee1be384c29bd7fc47af5fe">
+        sha1="24c0b70dd26c5502094d1ed39dd11781beedac81">
         <dex dex="/Users/DanielC/Documents/WorkSpace/yagt/android/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_c03d58ef398a8717eae3b27bf8db1880014effe4.jar" />
     </item>
     <item

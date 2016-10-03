@@ -8,6 +8,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
@@ -84,33 +85,36 @@ public class puta1 extends SurfaceView {
                 canvas.drawRect(cuadro, black);
             }
             }
-             /**ArrayList<Item> lista= new ArrayList<>();
+
+             ArrayList<Item> lista= new ArrayList<>();
              lista.add(new Item(ItemType.bomb,1,1) );
              lista.add(new Item(ItemType.fuel,2,1) );
              lista.add(new Item(ItemType.increaseTail,6,8) );
              lista.add(new Item(ItemType.shield,24,4) );
              lista.add(new Item(ItemType.turbo,34,25) );
-             lista.add(new Item(ItemType.tronTrail,14,19) );**/
+             lista.add(new Item(ItemType.bomb,14,19) );
 
 
         class ItemReceiver {
-            Canvas canvas;
             Rect cuadro = new Rect();
-            Rect drawItem = new Rect();
+            Canvas canvas;
+
+            public ItemReceiver(Canvas canvas){
+                this.canvas = canvas;
+                Log.w("puta1", "LLegué a ItemReceiver");
+            }
 
              public void drawer(Item item, Paint paint){
+                 Rect drawItem = new Rect();
                  int i = item.getIndexI();
                  int j = item.getIndexJ();
-
-                 Paint red = new Paint();
-                 red.setColor(Color.RED);
-                 red.setStyle(Paint.Style.FILL);
-
-
-                 canvas.drawRect(cuadro, red);
-                 cuadro.set(40+29*j,i*29,40+29*j+29,i*29+29);
+                 Log.e("puta1", "i: " + i + "j: " + j);
+                 drawItem.set(40+29*j,i*29,40+29*j+29,i*29+29);
+                 canvas.drawRect(drawItem, paint);
+                 Log.w("puta1", "LLegué a Drawer");
              }
              public void drawOnGame (Item item) {
+                 Log.w("puta1", "LLegué a drawOnGame");
                  switch (item.getType()) {
                      case bomb:
                          Paint red = new Paint();
@@ -182,13 +186,12 @@ public class puta1 extends SurfaceView {
 
 
         }
-        ItemReceiver itemReceiver = new ItemReceiver();
+        ItemReceiver itemReceiver = new ItemReceiver(canvas);
 
-        /**for (Item temp: lista) {
+        for (Item temp: lista) {
             itemReceiver.drawOnGame(temp);
-        }*/
-        Item ak7 = new Item(ItemType.bomb,1,1);
-        itemReceiver.drawOnGame(ak7);
+        }
+
 
     }}
     /**@Override
