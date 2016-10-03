@@ -8,27 +8,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="danielc.tec.helloworld.Main3Activity"
+    tools:context="danielc.tec.helloworld.danielc.tec.TronAndroid.Main3Activity"
     android:background="@android:color/transparent">
+
+
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:layout_alignParentTop="true"
+        android:layout_marginEnd="125dp"
+        android:id="@+id/editText"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="118dp"
-        android:layout_marginTop="227dp"
-        android:id="@+id/editText" />
+        android:layout_marginBottom="42dp" />
 
     <Button
         android:text="Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="34dp" />
+
+    <SurfaceView
+        android:layout_width="wrap_content"
         android:layout_alignEnd="@+id/editText"
-        android:layout_marginEnd="44dp"
-        android:layout_marginTop="60dp"
-        android:id="@+id/button" />
+        android:layout_marginEnd="137dp"
+        android:id="@+id/surfaceView1"
+        android:layout_alignParentStart="true"
+        android:layout_height="800dp" />
 </RelativeLayout>

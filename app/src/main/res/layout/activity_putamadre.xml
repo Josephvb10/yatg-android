@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app2="dasd"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_putamadre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="danielc.tec.helloworld.danielc.tec.TronAndroid.putamadre"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <danielc.tec.TronAndroid.Android.puta1
+            android:id="@+id/gameSurfaceView"
+            android:background="@android:color/transparent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="700dp"
+            android:layout_width="100dp"
+            android:layout_weight="0.63" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="409dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="454dp"
+                android:layout_height="68dp">
+
+                <TextView
+                    android:text="  FUEL:"
+                    android:layout_height="60dp"
+                    android:id="@+id/textView4"
+                    android:layout_weight="0.10"
+                    android:layout_width="20dp"
+                    android:textSize="36sp" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/progressBar2"
+                    android:layout_weight="0.15"
+                    android:background="@color/colorPrimaryDark"
+                    android:max="100"
+                    android:progress="100" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="454dp"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:text="DOWN"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="31dp"
+                    android:id="@+id/button3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:text="UP"
+                    android:id="@+id/button6"
+                    android:layout_alignStart="@+id/button3"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_above="@+id/button4" />
+
+                <Button
+                    android:text="LEFT"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/button4"
+                    android:layout_above="@+id/button3"
+                    android:layout_toStartOf="@+id/button6" />
+
+                <Button
+                    android:text="RIGHT"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/button5"
+                    android:layout_above="@+id/button3"
+                    android:layout_toEndOf="@+id/button3" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
