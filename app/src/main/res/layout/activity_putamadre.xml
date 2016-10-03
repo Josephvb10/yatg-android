@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <danielc.tec.TronAndroid.Android.puta1
+        <danielc.tec.TronAndroid.Android.Gameview_Logic
             android:id="@+id/gameSurfaceView"
             android:background="@android:color/transparent"
             android:layout_alignParentTop="true"

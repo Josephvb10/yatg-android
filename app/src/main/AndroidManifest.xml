@@ -8,22 +8,22 @@
         android:label="TRON The Game"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="danielc.tec.TronAndroid.Android.MainActivity">
+        <activity android:name="danielc.tec.TronAndroid.Android.Activity_Username">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="danielc.tec.TronAndroid.Android.Main2Activity" />
+        <activity android:name="danielc.tec.TronAndroid.Android.Activity_ip_port" />
         <activity
             android:name=".GameScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_game_screen"
             android:theme="@style/FullscreenTheme" />
         <activity android:name=".prueba" />
-        <activity android:name="danielc.tec.TronAndroid.Android.Main3Activity" />
-        <activity android:name="danielc.tec.TronAndroid.Android.putamadre"></activity>
+        <activity android:name="danielc.tec.TronAndroid.Android.trash.Main3Activity" />
+        <activity android:name="danielc.tec.TronAndroid.Android.Activity_Game"></activity>
     </application>
 
 </manifest>

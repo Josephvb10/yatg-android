@@ -32,7 +32,6 @@ public class Troncycle {
 		this.extraTrail = 2;
 		this.powerUpSteps = 0;
 		this.addHead(indexI, indexJ);
-		;
 
 	}
 	
