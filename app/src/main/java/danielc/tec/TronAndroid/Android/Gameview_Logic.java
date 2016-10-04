@@ -20,62 +20,54 @@ import danielc.tec.TronAndroid.GameStructures.ItemType;
  * Created by DanielC on 2/10/16.
  */
 
-public class Gameview_Logic extends SurfaceView  {
+public class Gameview_Logic extends SurfaceView implements Runnable {
+    Thread t = null;
+    boolean itItOK = false;
+    SurfaceHolder holder;
 
     public Gameview_Logic(Context context, AttributeSet attrs) {
         super(context, attrs);
-
-        SurfaceHolder holder = this.getHolder();
-        holder.addCallback(new SurfaceHolder.Callback() {
-                               @SuppressLint("WrongCall")
-                               @Override
-                               public void surfaceCreated(SurfaceHolder holder) {
-                                   Canvas c = holder.lockCanvas();
-                                   onDraw(c);
-                                   holder.unlockCanvasAndPost(c);
-                               }
-
-                               @Override
-                               public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
-
-                               }
-
-                               @Override
-                               public void surfaceDestroyed(SurfaceHolder holder) {
-
-                               }
-
-                           }
-
-        );
-
+        holder = getHolder();
     }
+    public void run() {
+        while (itItOK==true) {
+            if (!getHolder().getSurface().isValid()){
+                continue;
+            }
+            Canvas c = holder.lockCanvas();
+            draw(c);
+            holder.unlockCanvasAndPost(c);
+        }
+    }
+    public void pause() {
+        itItOK=false;
+        while (true){
+            try{
+                t.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }break;
+        }t = null;
+    }
+    public void resume() {
+        itItOK=true;
+        t = new Thread(this);
+        t.start();
+    }
+
+
+
+
+
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
-        new ReadThread(canvas).start();
-
-       /** ArrayList<Item> lista = new ArrayList<>();
-        lista.add(new Item(ItemType.bomb, 1, 1));
-        lista.add(new Item(ItemType.fuel, 2, 1));
-        lista.add(new Item(ItemType.increaseTail, 6, 8));
-        lista.add(new Item(ItemType.shield, 24, 4));
-        lista.add(new Item(ItemType.turbo, 34, 25));
-        lista.add(new Item(ItemType.bomb, 14, 19));
-
-
-
         ItemReceiver itemReceiver = new ItemReceiver(canvas);
         itemReceiver.eraseall();
-        for (Item temp : lista) {
-            itemReceiver.drawOnGame(temp);
-        }**/
-
+        Item item = new Item(ItemType.bomb,4,4);
+        itemReceiver.drawOnGame(item);
 
     }
-
-
 
 }

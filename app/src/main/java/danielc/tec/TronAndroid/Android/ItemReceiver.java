@@ -23,8 +23,6 @@ public class ItemReceiver {
 
     public void drawer(Item item, Paint paint) {
         Rect drawItem = new Rect();
-
-
         int i = item.getIndexI();
         int j = item.getIndexJ();
         Log.e("puta1", "i: " + i + "j: " + j);
@@ -33,10 +31,13 @@ public class ItemReceiver {
         Log.w("puta1", "LLegué a Drawer");
     }
 
-    public void eraseall() {
+    public void eraseall(
+
+    ) {
+
         Rect cuadro = new Rect();
         Paint black = new Paint();
-        cuadro.set(0, 0, canvas.getWidth(), canvas.getHeight());
+        cuadro.set(0, 0, 500, 500);
         black.setColor(Color.BLACK);
         black.setStyle(Paint.Style.FILL);
 
