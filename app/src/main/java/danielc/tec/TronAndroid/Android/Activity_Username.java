@@ -11,35 +11,35 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import danielc.tec.helloworld.R;
+import java.util.ArrayList;
 
-import static java.util.logging.Logger.global;
+import danielc.tec.helloworld.R;
 
 public class Activity_Username extends AppCompatActivity {
 
     static String username;
-
-
     Button next;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        Game_Sounds sound = Game_Sounds.getInstance();
+
+        if (sound.started()){
+            MediaPlayer main_theme1 = MediaPlayer.create(this, R.raw.theme1);
+            MediaPlayer main_theme2 = MediaPlayer.create(this, R.raw.theme2);
+            main_theme2.start();
+            main_theme2.setLooping(true);
+
+                }
+
+
+
 
         next = (Button)findViewById(R.id.Button_Play);
 
-        MediaPlayer main_theme = MediaPlayer.create(this, R.raw.theme1);
-
-        if (!main_theme.isPlaying()) {
-            main_theme.start();
-            main_theme.setLooping(true);
-
-
-
-        }
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -5,14 +5,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 
-import java.util.Random;
-
-import danielc.tec.TronAndroid.Android.ItemReceiver;
-import danielc.tec.TronAndroid.GameStructures.Item;
-import danielc.tec.TronAndroid.GameStructures.ItemType;
-
-import static android.R.attr.max;
-import static danielc.tec.TronAndroid.GameStructures.ItemType.*;
+import danielc.tec.TronAndroid.Comunication.ItemReceiver;
 
 /**
  * Created by DanielC on 3/10/16.

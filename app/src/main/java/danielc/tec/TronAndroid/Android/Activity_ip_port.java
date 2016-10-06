@@ -12,6 +12,7 @@ import android.widget.EditText;
 
 import java.io.IOException;
 
+import danielc.tec.TronAndroid.Comunication.TronClient;
 import danielc.tec.helloworld.R;
 
 public class Activity_ip_port extends AppCompatActivity {

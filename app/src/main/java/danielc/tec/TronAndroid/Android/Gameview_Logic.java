@@ -1,18 +1,12 @@
 package danielc.tec.TronAndroid.Android;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Rect;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
-import java.util.ArrayList;
-
+import danielc.tec.TronAndroid.Comunication.ItemReceiver;
 import danielc.tec.TronAndroid.GameStructures.Item;
 import danielc.tec.TronAndroid.GameStructures.ItemType;
 
