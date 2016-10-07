@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <application
+        android:name="danielc.tec.TronAndroid.Android.Main"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="TRON The Game"

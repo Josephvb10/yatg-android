@@ -1,6 +1,7 @@
 package danielc.tec.TronAndroid.Android;
 
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -9,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 import java.io.IOException;
 
@@ -21,6 +23,8 @@ public class Activity_ip_port extends AppCompatActivity {
     int playerPort;
     Button Get;
 
+    public ProgressDialog progress;
+
     private static boolean isNumeric(String str) {
         try {
             double d = Double.parseDouble(str);
@@ -29,41 +33,78 @@ public class Activity_ip_port extends AppCompatActivity {
         }
         return true;
     }
+
+
+
     private void startGame() throws IOException {
 
-        if (!TronClient.getInstance().connect(playerIp, playerPort)) {
-            AlertDialog alertDialog = new AlertDialog.Builder(Activity_ip_port.this).create();
-            alertDialog.setTitle("ERROR:");
-            alertDialog.setMessage("Can't connect to server. Please verify the IP and port.");
-            alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK, Im an idiot",
-                    new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-                        }
-                    });
-            alertDialog.show();
-            return;
-        }
+        new Thread() {
+            public void run() {
+                Utils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        showProgress();
+                    }
+                });
 
-        String joinMsg = TronClient.getInstance().joinIfCan(playerUsername);
-        if (!joinMsg.equals("OK")) {
-            AlertDialog alertDialog = new AlertDialog.Builder(Activity_ip_port.this).create();
-            alertDialog.setTitle("ERROR:");
-            alertDialog.setMessage(joinMsg);
-            alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK, Im an idiot",
-                    new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-                        }
-                    });
-            alertDialog.show();
-            return;
-        }
+                if (!TronClient.getInstance().connect(playerIp, playerPort)) {
+                    error("Error", "Can't connect to server. Please verify the IP and port.");
+                    return;
+                }
 
-        Intent next = new Intent(Activity_ip_port.this, Activity_Game.class);
-        startActivity(next);
+                String joinMsg = TronClient.getInstance().joinIfCan(playerUsername);
+                if (!joinMsg.equals("OK")) {
+                    error("Error", joinMsg);
+                    return;
+                }
+
+                success();
+            }
+        }.start();
 
     }
+
+    private void showProgress() {
+                progress = new ProgressDialog(this);
+                progress.setTitle("Please wait");
+                progress.setMessage("Connecting to server...");
+                progress.show();
+    }
+
+    private void error(String title, String msg) {
+        final String ftitle = title;
+        final String fmsg = msg;
+
+        Utils.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                progress.dismiss();
+                AlertDialog alertDialog = new AlertDialog.Builder(Activity_ip_port.this).create();
+                alertDialog.setTitle(ftitle);
+                alertDialog.setMessage(fmsg);
+                alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK, Im an idiot",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        });
+                alertDialog.show();
+            }
+        });
+
+    }
+
+    private void success() {
+        Utils.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                progress.dismiss();
+                Intent next = new Intent(Activity_ip_port.this, Activity_Game.class);
+                startActivity(next);
+            }
+        });
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

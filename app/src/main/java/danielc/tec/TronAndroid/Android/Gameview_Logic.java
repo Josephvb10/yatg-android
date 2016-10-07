@@ -53,14 +53,10 @@ public class Gameview_Logic extends SurfaceView implements Runnable {
 
 
 
-
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        ItemReceiver itemReceiver = new ItemReceiver(canvas);
-        itemReceiver.eraseall();
-        Item item = new Item(ItemType.bomb,4,4);
-        itemReceiver.drawOnGame(item);
+        new PaintThread(canvas).start();
 
     }
 

@@ -10,7 +10,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="danielc.tec.helloworld.danielc.tec.TronAndroid.MainActivity"
+    tools:context="danielc.tec.TronAndroid.Android.Activity_Username"
     android:background="@color/colorPrimaryDark">
 
     <LinearLayout
