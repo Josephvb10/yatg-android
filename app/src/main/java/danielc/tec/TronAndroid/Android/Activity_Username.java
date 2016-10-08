@@ -11,21 +11,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import java.util.ArrayList;
-
 import danielc.tec.helloworld.R;
 
 public class Activity_Username extends AppCompatActivity {
 
     static String username;
     Button next;
+    Game_Sounds sound = Game_Sounds.getInstance();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_username);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        Game_Sounds sound = Game_Sounds.getInstance();
 
         if (sound.started()){
             MediaPlayer main_theme1 = MediaPlayer.create(this, R.raw.theme1);

@@ -39,7 +39,8 @@
             android:id="@+id/entry_ip"
             android:layout_weight="0.15"
             android:background="@color/colorPrimary"
-            android:textSize="36sp" />
+            android:textSize="36sp"
+            android:text="192.168.1.3" />
 
         <Space
             android:layout_width="match_parent"
@@ -67,7 +68,8 @@
             android:background="@color/colorPrimary"
             android:textSize="36sp"
             android:typeface="normal"
-            android:visibility="visible" />
+            android:visibility="visible"
+            android:text="8081" />
 
         <TextView
             android:layout_width="match_parent"

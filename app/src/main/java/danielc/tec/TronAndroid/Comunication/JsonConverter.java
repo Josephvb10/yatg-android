@@ -13,9 +13,7 @@ public class JsonConverter {
 		try {
 			objectMapper.writeValue(stringJson, value);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			System.out.println(e.getMessage());
-			//e.printStackTrace();
+			e.printStackTrace();
 		}
 		return stringJson.toString();
 

@@ -15,7 +15,16 @@ public class Game_Sounds {
     }
 
     boolean music_flag = true;
+    boolean music_flag2 = true;
 
+    public void f1 (int e){
+        if (e==1){
+            music_flag = true;
+        }
+        if (e==2){
+            music_flag2 = true;
+        }
+    }
 
     private Game_Sounds() {
     }
