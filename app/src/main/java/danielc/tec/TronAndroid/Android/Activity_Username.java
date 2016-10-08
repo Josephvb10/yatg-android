@@ -19,7 +19,10 @@ public class Activity_Username extends AppCompatActivity {
     Button next;
     Game_Sounds sound = Game_Sounds.getInstance();
 
-
+    /**
+     * The onCreate Function of an activity, set on the music, add buttons and alert dialogs.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +31,7 @@ public class Activity_Username extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         if (sound.started()){
-            MediaPlayer main_theme1 = MediaPlayer.create(this, R.raw.theme1);
+
             MediaPlayer main_theme2 = MediaPlayer.create(this, R.raw.theme2);
             main_theme2.start();
             main_theme2.setLooping(true);

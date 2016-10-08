@@ -25,6 +25,11 @@ public class Activity_ip_port extends AppCompatActivity {
 
     public ProgressDialog progress;
 
+    /**
+     * Verifies if an string is an int
+     * @param str
+     * @return
+     */
     private static boolean isNumeric(String str) {
         try {
             double d = Double.parseDouble(str);
@@ -35,7 +40,10 @@ public class Activity_ip_port extends AppCompatActivity {
     }
 
 
-
+    /**
+     * Initiate the start game thread
+     * @throws IOException
+     */
     private void startGame() throws IOException {
 
         new Thread() {
@@ -64,6 +72,9 @@ public class Activity_ip_port extends AppCompatActivity {
 
     }
 
+    /**
+     * Show an a wait simbol when the app in conecting
+     */
     private void showProgress() {
                 progress = new ProgressDialog(this);
                 progress.setTitle("Please wait");
@@ -71,12 +82,20 @@ public class Activity_ip_port extends AppCompatActivity {
                 progress.show();
     }
 
+    /**
+     * return an alert if some data getter is emo,r
+     * @param title
+     * @param msg
+     */
     private void error(String title, String msg) {
         final String ftitle = title;
         final String fmsg = msg;
 
         Utils.runOnUiThread(new Runnable() {
             @Override
+            /**
+             * initialize the thread
+             */
             public void run() {
                 progress.dismiss();
                 AlertDialog alertDialog = new AlertDialog.Builder(Activity_ip_port.this).create();
@@ -94,6 +113,9 @@ public class Activity_ip_port extends AppCompatActivity {
 
     }
 
+    /**
+     * change the activity and open the game window
+     */
     private void success() {
         Utils.runOnUiThread(new Runnable() {
             @Override
@@ -105,6 +127,10 @@ public class Activity_ip_port extends AppCompatActivity {
         });
     }
 
+    /**
+     * The onCreate function of the Activity
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

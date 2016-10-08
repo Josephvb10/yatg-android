@@ -10,6 +10,10 @@ import danielc.tec.helloworld.R;
 public class Game_Sounds {
     private static Game_Sounds ourInstance = new Game_Sounds();
 
+    /**
+     * Return the instance of the singleton
+     * @return
+     */
     public static Game_Sounds getInstance() {
         return ourInstance;
     }
@@ -17,25 +21,15 @@ public class Game_Sounds {
     boolean music_flag = true;
     boolean music_flag2 = true;
 
-    public void f1 (int e){
-        if (e==1){
-            music_flag = true;
-        }
-        if (e==2){
-            music_flag2 = true;
-        }
-    }
-
     private Game_Sounds() {
     }
 
+    /**
+     * Return the flag true or false depending if the music is playing
+     * @return boolean
+     */
     public boolean started(){
         return music_flag;
 
     }
-
-    public void already_started (){
-        music_flag = false;
-    }
-
 }

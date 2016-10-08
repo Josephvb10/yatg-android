@@ -1,12 +1,13 @@
 package danielc.tec.TronAndroid.Comunication;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import danielc.tec.TronAndroid.GameStructures.*;
+
+
 import java.io.IOException;
 import java.util.ArrayList;
 
 import danielc.tec.TronAndroid.GameStructures.Item;
-
+import danielc.tec.TronAndroid.GameStructures.SimplePlayer;
 
 /**
  * Created by joseph on 10/2/16.
@@ -24,12 +25,15 @@ public class JsonParser {
 		return ourInstance;
 	}
 
-	public void parseJson(String json) {
+	public void parseJson(String newJson) {
+		if (this.json == newJson) {
+			return;
+		}
 		ObjectMapper mapper = new ObjectMapper();
 		OutputMessage newMessage = new OutputMessage();
 		try {
-			newMessage = mapper.readValue(json, OutputMessage.class);
-			this.json = json;
+			newMessage = mapper.readValue(newJson, OutputMessage.class);
+			this.json = newJson;
 		} catch (IOException e) {
 			System.out.println("No se pudo procesar el JSON");
 			//System.out.println(e.getMessage());
@@ -42,6 +46,10 @@ public class JsonParser {
 
 	public SimplePlayer getPlayerData() {
 		return null != parsedJson ? parsedJson.getPlayer() : null;
+	}
+
+	public ArrayList<Item> getPowerUps() {
+		return null != parsedJson ? parsedJson.getpowerupsList() : null;
 	}
 
 	public ArrayList<Item> getPlayerItems() {

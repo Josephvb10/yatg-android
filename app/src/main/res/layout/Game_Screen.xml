@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:app2="dasd"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_putamadre"
     android:layout_width="match_parent"
@@ -16,7 +15,9 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
         <danielc.tec.TronAndroid.Android.Gameview_Logic
             android:id="@+id/gameSurfaceView"
@@ -30,7 +31,8 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="409dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="0.06">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -63,21 +65,13 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:text="DOWN"
-                    android:layout_width="120dp"
-                    android:layout_height="60dp"
-                    android:layout_marginBottom="31dp"
-                    android:id="@+id/btnDown"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true" />
-
-                <Button
                     android:text="UP"
                     android:id="@+id/btnUp"
                     android:layout_alignStart="@+id/btnDown"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:layout_above="@+id/btnLeft" />
+                    android:layout_above="@+id/btnLeft"
+                    android:background="@color/colorAccent" />
 
                 <Button
                     android:text="LEFT"
@@ -85,7 +79,8 @@
                     android:layout_height="60dp"
                     android:id="@+id/btnLeft"
                     android:layout_above="@+id/btnDown"
-                    android:layout_toStartOf="@+id/btnUp" />
+                    android:layout_toStartOf="@+id/btnUp"
+                    android:background="@color/colorAccent" />
 
                 <Button
                     android:text="RIGHT"
@@ -93,26 +88,60 @@
                     android:layout_height="60dp"
                     android:id="@+id/btnRight"
                     android:layout_above="@+id/btnDown"
-                    android:layout_toEndOf="@+id/btnDown" />
+                    android:layout_toEndOf="@+id/btnDown"
+                    android:background="@color/colorAccent" />
 
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/bomb"
-                    android:id="@+id/imageButton2"
+                <Button
+                    android:text="DOWN"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="31dp"
+                    android:id="@+id/btnDown"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:text="SHIELD"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="100sp"
+                    android:layout_width="420dp"
+                    android:layout_below="@+id/textView2"
+                    android:layout_alignStart="@+id/btnShield"
+                    android:id="@+id/CurrentPower"
+                    android:layout_height="140dp" />
+
+                <Button
+                    android:text="TURBO"
+                    android:layout_height="80dp"
+                    android:id="@+id/btnTurbo"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="160dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignEnd="@+id/btnRight" />
+
+                <Button
+                    android:text="Shield"
+                    android:layout_height="80dp"
+                    android:id="@+id/btnShield"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="160dp"
+                    android:layout_alignBottom="@+id/btnTurbo"
+                    android:layout_alignStart="@+id/btnLeft"
+                    android:layout_alignTop="@+id/btnTurbo" />
+
+                <TextView
+                    android:text="CURRENT POWER-UP:"
+                    android:layout_height="60dp"
+                    android:id="@+id/textView2"
+                    android:layout_weight="0.10"
+                    android:textSize="36sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="17dp"
+                    android:layout_width="420dp"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="11dp"
-                    android:background="@color/colorPrimaryDark" />
-
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
-                    android:layout_below="@+id/imageButton2"
-                    android:layout_alignStart="@+id/btnUp"
-                    android:layout_marginTop="91dp"
-                    android:id="@+id/imageButton3" />
+                    android:layout_alignParentEnd="true" />
 
             </RelativeLayout>
         </LinearLayout>

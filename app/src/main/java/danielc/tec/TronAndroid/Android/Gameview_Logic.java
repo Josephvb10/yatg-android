@@ -1,24 +1,16 @@
 package danielc.tec.TronAndroid.Android;
 
-import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
-import android.content.pm.ActivityInfo;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.widget.ProgressBar;
 
 import java.util.ArrayList;
 
 import danielc.tec.TronAndroid.Comunication.JsonParser;
 import danielc.tec.TronAndroid.GameStructures.Item;
-import danielc.tec.helloworld.R;
 
 /**
  * Created by DanielC on 2/10/16.
@@ -28,19 +20,23 @@ public class Gameview_Logic extends SurfaceView implements Runnable {
     Thread t = null;
     boolean itItOK = false;
     SurfaceHolder holder;
-    Bitmap btmBomb = BitmapFactory.decodeResource(getResources(), R.drawable.bomb);
-    Bitmap btmShield = BitmapFactory.decodeResource(getResources(), R.drawable.bomb);
-    Bitmap btmSpeed = BitmapFactory.decodeResource(getResources(), R.drawable.bomb);
-    Bitmap btmTail = BitmapFactory.decodeResource(getResources(), R.drawable.bomb);
-    Bitmap btmGas = BitmapFactory.decodeResource(getResources(), R.drawable.bomb);
 
+    /**
+     * Method created for gameview
+     * @param context
+     * @param attrs
+     */
     public Gameview_Logic(Context context, AttributeSet attrs) {
         super(context, attrs);
         holder = getHolder();
     }
 
+    /**
+     * Thread that draws all in the gamesurface
+     */
     public void run() {
         while (itItOK == true) {
+            JsonParser.getInstance().getPlayerData().setSpeed(10);
             if (JsonParser.getInstance().getPlayerData().isDead()) {
                 pause();
 
@@ -51,7 +47,7 @@ public class Gameview_Logic extends SurfaceView implements Runnable {
             Canvas c = holder.lockCanvas();
             draw(c);
             ItemDrawer itemDrawer = new ItemDrawer(c);
-            //itemDrawer.eraseall();
+            itemDrawer.eraseall();
             ArrayList<Item> items = JsonParser.getInstance().getPlayerItems();
             if (items != null) {
                 for (Item data : items) {
@@ -66,10 +62,13 @@ public class Gameview_Logic extends SurfaceView implements Runnable {
             }
 
             holder.unlockCanvasAndPost(c);
+
         }
     }
 
-
+    /**
+     * This Method pauses the thread
+     */
     public void pause() {
         itItOK = false;
         while (true) {
@@ -89,15 +88,10 @@ public class Gameview_Logic extends SurfaceView implements Runnable {
         t.start();
     }
 
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            pause();
-        } else if (keyCode == KeyEvent.KEYCODE_HOME) {
-            pause();
-        }
-        return super.onKeyDown(keyCode, event);
-    }
-
+    /**
+     * the method onDraw
+     * @param canvas
+     */
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);

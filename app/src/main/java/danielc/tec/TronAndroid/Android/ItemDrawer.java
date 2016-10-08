@@ -19,11 +19,15 @@ import static android.R.attr.bitmap;
  */
 public class ItemDrawer {
     Canvas canvas;
-    Bitmap Foto;
     public ItemDrawer(Canvas canvas) {
         this.canvas = canvas;
     }
 
+    /**
+     * draw the item
+     * @param item is the object that contains the data of the items
+     * @param paint the color to draw the squares
+     */
     public void drawer(Item item, Paint paint) {
         Rect drawItem = new Rect();
         int j = item.getIndexI();
@@ -32,6 +36,9 @@ public class ItemDrawer {
         canvas.drawRect(drawItem, paint);
     }
 
+    /**
+     * Used to draw a matrix
+     */
     public void eraseall(
 
     ) {
@@ -61,12 +68,11 @@ public class ItemDrawer {
         }
     }
 
-    public void bitmapper(Item item) {
-        int j = item.getIndexI();
-        int i = item.getIndexJ();
-        canvas.drawBitmap(Foto, 40*i,29*j,null);
-    }
 
+    /**
+     * This function is used for draw the players, the tail and the items on the game
+     * @param item is an object that contains all the data and position of the items
+     */
     public void drawOnGame(Item item) {
         switch (item.getType()) {
             case bomb:
@@ -96,7 +102,7 @@ public class ItemDrawer {
                 break;
             case turbo:
                 Paint black = new Paint();
-                black.setColor(Color.BLACK);
+                black.setColor(Color.GRAY);
                 black.setStyle(Paint.Style.FILL);
                 drawer(item, black);
                 break;
@@ -112,25 +118,25 @@ public class ItemDrawer {
                             break;
                         case player2:
                             Paint x2 = new Paint();
-                            x2.setColor(Color.WHITE);
+                            x2.setColor(Color.CYAN);
                             x2.setStyle(Paint.Style.FILL);
                             drawer(item, x2);
                             break;
                         case player3:
                             Paint x3 = new Paint();
-                            x3.setColor(Color.CYAN);
+                            x3.setColor(Color.YELLOW);
                             x3.setStyle(Paint.Style.FILL);
                             drawer(item, x3);
                             break;
                         case player4:
                             Paint x4 = new Paint();
-                            x4.setColor(Color.BLUE);
+                            x4.setColor(Color.MAGENTA);
                             x4.setStyle(Paint.Style.FILL);
                             drawer(item, x4);
                             break;
                         case bot:
                             Paint x5 = new Paint();
-                            x5.setColor(Color.BLUE);
+                            x5.setColor(Color.GRAY);
                             x5.setStyle(Paint.Style.FILL);
                             drawer(item, x5);
                             break;
@@ -146,25 +152,25 @@ public class ItemDrawer {
                             break;
                         case player2:
                             Paint y1 = new Paint();
-                            y1.setColor(Color.WHITE);
+                            y1.setColor(Color.CYAN);
                             y1.setStyle(Paint.Style.FILL);
                             drawer(item, y1);
                             break;
                         case player3:
                             Paint y2 = new Paint();
-                            y2.setColor(Color.CYAN);
+                            y2.setColor(Color.YELLOW);
                             y2.setStyle(Paint.Style.FILL);
                             drawer(item, y2);
                             break;
                         case player4:
                             Paint y3 = new Paint();
-                            y3.setColor(Color.BLUE);
+                            y3.setColor(Color.MAGENTA);
                             y3.setStyle(Paint.Style.FILL);
                             drawer(item, y3);
                             break;
                         case bot:
                             Paint y4 = new Paint();
-                            y4.setColor(Color.BLUE);
+                            y4.setColor(Color.GRAY);
                             y4.setStyle(Paint.Style.FILL);
                             drawer(item, y4);
                             break;

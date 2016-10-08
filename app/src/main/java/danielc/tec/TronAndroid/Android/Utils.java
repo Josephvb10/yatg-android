@@ -8,7 +8,10 @@ import android.os.Looper;
  */
 
 public class Utils {
-
+    /**
+     * Runs the threads on the Main Thread
+     * @param runnable
+     */
     public static void runOnUiThread(Runnable runnable){
         final Handler UIHandler = new Handler(Looper.getMainLooper());
         UIHandler .post(runnable);
