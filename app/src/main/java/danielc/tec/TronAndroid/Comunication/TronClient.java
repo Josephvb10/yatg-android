@@ -65,16 +65,13 @@ public class TronClient {
             String line;
             while (true) {
                 if ((line = in.readLine()) != null) {
-                    System.out.println("TECPONG recibido");
                     return line.equals("TECPONG");
                 }
                 if (System.currentTimeMillis() >= timeoutExpiredMs) {
-                    System.out.println("Timeout alcanzado");
                     return false;
                 }
             }
         } catch (IOException e) {
-            System.out.println("Error al esperar TECPONG");
             return false;
         }
     }

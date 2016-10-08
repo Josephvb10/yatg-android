@@ -20,9 +20,8 @@ import static android.R.attr.bitmap;
 public class ItemDrawer {
     Canvas canvas;
     Bitmap Foto;
-    public ItemDrawer(Canvas canvas, Bitmap bt) {
+    public ItemDrawer(Canvas canvas) {
         this.canvas = canvas;
-        this.Foto = bt;
     }
 
     public void drawer(Item item, Paint paint) {
@@ -113,13 +112,13 @@ public class ItemDrawer {
                             break;
                         case player2:
                             Paint x2 = new Paint();
-                            x2.setColor(Color.BLUE);
+                            x2.setColor(Color.WHITE);
                             x2.setStyle(Paint.Style.FILL);
                             drawer(item, x2);
                             break;
                         case player3:
                             Paint x3 = new Paint();
-                            x3.setColor(Color.BLUE);
+                            x3.setColor(Color.CYAN);
                             x3.setStyle(Paint.Style.FILL);
                             drawer(item, x3);
                             break;
@@ -147,13 +146,13 @@ public class ItemDrawer {
                             break;
                         case player2:
                             Paint y1 = new Paint();
-                            y1.setColor(Color.BLUE);
+                            y1.setColor(Color.WHITE);
                             y1.setStyle(Paint.Style.FILL);
                             drawer(item, y1);
                             break;
                         case player3:
                             Paint y2 = new Paint();
-                            y2.setColor(Color.BLUE);
+                            y2.setColor(Color.CYAN);
                             y2.setStyle(Paint.Style.FILL);
                             drawer(item, y2);
                             break;

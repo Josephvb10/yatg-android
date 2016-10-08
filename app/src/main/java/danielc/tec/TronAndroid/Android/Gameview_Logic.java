@@ -2,6 +2,7 @@ package danielc.tec.TronAndroid.Android;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -32,6 +33,7 @@ public class Gameview_Logic extends SurfaceView implements Runnable {
     Bitmap btmSpeed = BitmapFactory.decodeResource(getResources(), R.drawable.bomb);
     Bitmap btmTail = BitmapFactory.decodeResource(getResources(), R.drawable.bomb);
     Bitmap btmGas = BitmapFactory.decodeResource(getResources(), R.drawable.bomb);
+
     public Gameview_Logic(Context context, AttributeSet attrs) {
         super(context, attrs);
         holder = getHolder();
@@ -39,13 +41,17 @@ public class Gameview_Logic extends SurfaceView implements Runnable {
 
     public void run() {
         while (itItOK == true) {
+            if (JsonParser.getInstance().getPlayerData().isDead()) {
+                pause();
+
+            }
             if (!getHolder().getSurface().isValid()) {
                 continue;
             }
             Canvas c = holder.lockCanvas();
             draw(c);
-            ItemDrawer itemDrawer = new ItemDrawer(c,btmBomb);
-            itemDrawer.eraseall();
+            ItemDrawer itemDrawer = new ItemDrawer(c);
+            //itemDrawer.eraseall();
             ArrayList<Item> items = JsonParser.getInstance().getPlayerItems();
             if (items != null) {
                 for (Item data : items) {
@@ -83,25 +89,22 @@ public class Gameview_Logic extends SurfaceView implements Runnable {
         t.start();
     }
 
-    public boolean onKeyDown(int keyCode, KeyEvent event)
-    {
-        if(keyCode == KeyEvent.KEYCODE_BACK)
-        {
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
             pause();
-        }
-        else if(keyCode == KeyEvent.KEYCODE_HOME)
-        {
+        } else if (keyCode == KeyEvent.KEYCODE_HOME) {
             pause();
         }
         return super.onKeyDown(keyCode, event);
     }
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         if (itItOK == false) {
             resume();
+
         }
 
     }
-
 }

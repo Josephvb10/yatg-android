@@ -1,6 +1,7 @@
 package danielc.tec.TronAndroid.Android;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Handler;
@@ -32,6 +33,8 @@ public class Activity_Game extends Activity {
         Down = (Button) findViewById(R.id.btnDown);
         Left = (Button) findViewById(R.id.btnLeft);
         Right = (Button) findViewById(R.id.btnRight);
+        mProgress = (ProgressBar) findViewById(R.id.progress_Bar);
+
         Up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,9 +60,9 @@ public class Activity_Game extends Activity {
             }
         });
 
-        mProgress = (ProgressBar) findViewById(R.id.progress_Bar);
 
 
+/**
         new Thread() {
             public void run() {
                 while (true) {
@@ -75,7 +78,7 @@ public class Activity_Game extends Activity {
                     });
                 }
             }
-        }.start();
+        }.start();**/
 
     }
 }
